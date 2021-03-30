@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=WarmupMethods
+comment1.params=size
+comment1.target=void\ multTable(int)
+comment2.params=lines
+comment2.target=void\ starTree(int)
+comment3.params=
+comment3.target=void\ colorWheel()
+comment4.params=size
+comment4.target=void\ makeSquare(int)
+comment5.params=str
+comment5.target=void\ reverseString(java.lang.String)
+numComments=6
