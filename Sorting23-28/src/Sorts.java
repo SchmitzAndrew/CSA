@@ -118,28 +118,29 @@ public class Sorts {
      * @param last  ending index of range of values to be sorted
      */
     public void mergeSort(int[] a, int first, int last) {
-        // Replace these lines with your code
-        System.out.println();
-        System.out.println("MergeSort");
-        System.out.println();
 
-        void mergeSort ( int[] a, int first, int last){
-            int temp = 0;
+      int temp = 0;
+			int midpoint = 0;
 //  Recursively divides a list in half, over and over.  When the
 //  sublist has one or two values, stop subdividing.
             if (a[first] == a[last]){
                 ;
             }
             }else if ((last -first) == 1){
-                if ((a[first] < a[last])){
+                if ((a[first] > a[last])){
                     temp = a[first];
-                    sublist[0] = sublist[1];
+                    a[first] = a[last];
+										a[last] = temp;
                 }
             }else{   // recursion, divide list into two halves
-            Find midpoint of current sublist
-            Call mergeSort and process left sublist
-            Call mergeSort and process right sublist
-            merge left and right sublists
+            //Find midpoint of current sublist
+						midpoint  = a.length / 2;
+            //Call mergeSort and process left sublist
+						mergesort(a, 0 , midpoint)
+            //Call mergeSort and process right sublist
+						mergesort(a, midpoint + 1 , a.length)
+            //merge left and right sublists
+						merge(a, )
         }
     }
 
