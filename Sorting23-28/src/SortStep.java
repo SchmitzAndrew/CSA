@@ -16,8 +16,7 @@ public class SortStep {
     /**
      *  Constructor for the SortStep object
      */
-    public SortStep()
-    {
+    public SortStep() {
         console = new ConsoleIO();
         mySorts = new Sorts();
     }
@@ -74,8 +73,7 @@ public class SortStep {
                 System.out.println();
                 System.out.print("Print list to screen (y/n)? ");
                 print = console.readLine();
-                if (print.charAt(0) == 'y' || print.charAt(0) == 'Y')
-                {
+                if (print.charAt(0) == 'y' || print.charAt(0) == 'Y') {
                     screenOutput();
                 }
                 System.out.println();
